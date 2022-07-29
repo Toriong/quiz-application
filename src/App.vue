@@ -1,17 +1,16 @@
 <template>
 <NavBar/>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<GlobalStyles/>
 <router-view />
 </template>
+
 <script>
-import NavBar from './components/NavBar.vue'
+import NavBar from './components/NavBar.vue';
+import GlobalStyles from './GlobalStyles.vue';
 
 export default {
-  name: 'App',
-  components: {
-    NavBar
-}
+    name: "App",
+    components: { NavBar, GlobalStyles }
 }
 </script>
 

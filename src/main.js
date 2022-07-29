@@ -1,14 +1,23 @@
 import { createApp } from 'vue'
-// import Vue from 'vue'
 import App from './App.vue'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 import router from './router'
-// import router from 'vue-router'
+import { library } from '@fortawesome/fontawesome-svg-core'
 
-// new Vue({
-//     router,
-//     render: h => h(App),
-// }).$mount('#app')
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-createApp(App).use(router).mount('#app')
+/* import specific icons */
+import { faBars, faPhone } from '@fortawesome/free-solid-svg-icons'
+
+/* add icons to the library */
+library.add(faBars, faPhone)
+
+const _App = createApp(App)
+
+_App.use(router);
+
+_App.component('font-awesome-icon', FontAwesomeIcon)
+
+_App.mount('#app')
