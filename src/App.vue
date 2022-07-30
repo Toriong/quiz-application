@@ -1,3 +1,4 @@
+
 <template>
 <NavBar/>
 <GlobalStyles/>
@@ -5,7 +6,7 @@
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue';
+import NavBar from './components/Nav/NavBar.vue';
 import GlobalStyles from './GlobalStyles.vue';
 
 export default {
