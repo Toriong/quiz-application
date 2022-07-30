@@ -1,13 +1,11 @@
 <script>
+import { onBeforeUnmount } from 'vue'
 
 
 export default {
     name: "SignInModal",
-    mounted() {
-      console.log('tacos and burritos')  
-    },
-    beforeMount: () => {
-        console.log('hey there')
+    beforeUnmount() {
+        console.log('comp will be unmounted.')
     },
     props: {
         isModalOn: Boolean
@@ -31,9 +29,13 @@ export default {
             console.log(oldVal)
         }
     },
-    beforeUnmount() {
-       console.log("hello there") 
-    }
+    setup() {
+        onBeforeUnmount(() => {
+            console.log('hey there tacos')
+        });
+        
+    },
+      
 }
 
 

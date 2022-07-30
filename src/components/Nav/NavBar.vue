@@ -1,3 +1,4 @@
+
 <script>
 import SignInSec from "../SignIn/SignInSec.vue";
 
@@ -21,6 +22,25 @@ export default {
 
 </script>
 
+<style scoped>
+.navbar,
+.unfixed-wrapper {
+    height: 150px;
+}
+
+.btnSec {
+    right: 0;
+    bottom: 0;
+    width: 200px;
+}
+
+.signInModal{
+    
+}
+</style>
+
+
+
 
 <template>
     <div className='unfixed-wrapper'>
@@ -42,25 +62,8 @@ export default {
                     </div>
                 </div>
             </section>
-            <!-- How do i conditional open a modal? -->
-
         </nav>
     </div>
 </template>
 
-<style scoped>
-.navbar,
-.unfixed-wrapper {
-    height: 150px;
-}
 
-.btnSec {
-    right: 0;
-    bottom: 0;
-    width: 200px;
-}
-
-.signInModal{
-    
-}
-</style>
