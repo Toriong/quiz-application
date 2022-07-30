@@ -6,4 +6,8 @@
     .noPadding{
         padding: 0;
     }
+
+    input{
+        all: unset;
+    }
 </style>
